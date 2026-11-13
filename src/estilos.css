@@ -1,0 +1,69 @@
+@import "tailwindcss";
+/* Tokens da empresa ativa, gerados por `npm run tema`. Nunca editar à mão. */
+@import "./tema/ativa/tema.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Mapeia os tokens da empresa para classes do Tailwind.
+   Componentes usam SÓ estas classes ou var(--token). Cor fixa é reprovada no QA. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  /* Superfície escura da marca (login, topbar, hero): igual nos dois temas */
+  --color-marca-1: var(--marca-superficie-1);
+  --color-marca-2: var(--marca-superficie-2);
+  --color-marca-3: var(--marca-superficie-3);
+  --color-marca-borda: var(--marca-superficie-borda);
+  --color-marca-texto: var(--marca-superficie-texto);
+  --color-marca-texto-suave: var(--marca-superficie-texto-suave);
+
+  /* Medidas fixas do layout padrão (iguais para todas as empresas) */
+  --radius-card: 22px;
+  --radius-icone: 18px;
+  --container-painel: 80rem;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+:root {
+  --radius: 14px;
+  --topbar-altura: 74px;
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { color-scheme: light; }
+  html.dark { color-scheme: dark; }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  ::selection { background: var(--primary); color: var(--primary-foreground); }
+  :focus-visible { outline-color: var(--ring); }
+}
+
+@keyframes entrar {
+  from { opacity: 0; transform: translateY(-4px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

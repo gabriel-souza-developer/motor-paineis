@@ -1,0 +1,13 @@
+node_modules
+dist
+out
+.next
+.qa-build
+relatorios
+/public/
+src/tema/ativa
+next-env.d.ts
+*.tsbuildinfo
+.env
+.env.*
+!.env.example

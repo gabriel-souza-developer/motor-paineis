@@ -1,0 +1,149 @@
+{
+  "slug": "logmovy",
+  "nome": "LogMovy",
+  "produto": "Hub SSO",
+  "slogan": "Centro de Comando e Operações",
+  "eyebrowLogin": "Gestão de Escalas",
+  "api": {
+    "dev": "https://logmovy.kodyvera.com/LogAuth/Dev/api",
+    "homologacao": "",
+    "producao": ""
+  },
+  "logos": {
+    "clara": "logo.svg",
+    "escura": "logo.svg",
+    "favicon": "favicon.svg"
+  },
+  "login": {
+    "selo": {
+      "texto": "Telemetria em tempo real",
+      "fonte": "api"
+    },
+    "titulo": "Controle escalas, rotas e presença da sua frota em um só lugar.",
+    "subtitulo": "Acompanhe a disponibilidade diária dos entregadores, aloque turnos por empresa parceira e mantenha o ritmo de fechamento sem gargalos.",
+    "formSubtitulo": "Entre com sua conta corporativa para gerenciar escalas, motoboys e empresas.",
+    "visual": "rede",
+    "chips": [
+      {
+        "titulo": "Rota #409 Ativa",
+        "selo": "No prazo",
+        "texto": "Lucas M. • Turno Almoço (11h às 15h)",
+        "icone": "bike",
+        "fonte": "fixo"
+      },
+      {
+        "titulo": "Empresas Parceiras",
+        "selo": "+98,4% SLA",
+        "texto": "Escalas sincronizadas",
+        "icone": "building",
+        "fonte": "fixo"
+      }
+    ],
+    "indicadores": [
+      {
+        "rotulo": "Motoboys ativos",
+        "valor": "41",
+        "icone": "users",
+        "fonte": "api",
+        "endpoint": "/public/stats/ativos"
+      },
+      {
+        "rotulo": "Disponíveis hoje",
+        "valor": "36",
+        "icone": "calendar-check",
+        "fonte": "api",
+        "endpoint": "/public/stats/disponiveis"
+      },
+      {
+        "rotulo": "Status da rede",
+        "valor": "100% Operacional",
+        "icone": "shield-check",
+        "fonte": "api",
+        "endpoint": "/public/status"
+      }
+    ]
+  },
+  "painel": {
+    "seloHero": "Centro de Comando Ativo",
+    "heroTexto": "Selecione o módulo para gerenciar motoboys, empresas parceiras, escalas e operações da LogMovy."
+  },
+  "modulos": [
+    {
+      "id": "frota",
+      "titulo": "Credenciamento e Frota",
+      "descricao": "Cadastro de motoboys, análise de documentos, aprovação e boas-vindas.",
+      "icone": "bike",
+      "status": "ativo",
+      "rota": "/modulo?id=frota"
+    },
+    {
+      "id": "parceiros",
+      "titulo": "Empresas Parceiras B2B",
+      "descricao": "Restaurantes, farmácias, contatos comerciais e demandas de entrega.",
+      "icone": "building",
+      "status": "ativo",
+      "rota": "/modulo?id=parceiros"
+    },
+    {
+      "id": "perfil",
+      "titulo": "Meu Perfil e Segurança",
+      "descricao": "Dados da sua conta e redefinição de senha por link válido por 15 minutos.",
+      "icone": "user-round",
+      "status": "ativo",
+      "rota": "/perfil"
+    },
+    {
+      "id": "escalas",
+      "titulo": "Gestão de Escalas",
+      "descricao": "Turnos por empresa parceira, check-in e presença em tempo real.",
+      "icone": "calendar-days",
+      "status": "em-breve",
+      "nota": "Estamos preparando a alocação automática de turnos e o check-in."
+    },
+    {
+      "id": "financeiro",
+      "titulo": "Financeiro e Repasses PIX",
+      "descricao": "Fechamento semanal da frota, chaves PIX e faturamento B2B.",
+      "icone": "badge-dollar-sign",
+      "status": "em-breve",
+      "nota": "Estamos finalizando a conciliação bancária e os repasses por PIX."
+    },
+    {
+      "id": "relatorios",
+      "titulo": "Relatórios e Indicadores",
+      "descricao": "SLA, aprovação de frota e desempenho por região.",
+      "icone": "chart-column",
+      "status": "em-breve",
+      "nota": "Os painéis de SLA e volume de entregas estão a caminho."
+    },
+    {
+      "id": "logs",
+      "titulo": "Logs do Sistema",
+      "descricao": "Acessos, sessões ativas e histórico de ações.",
+      "icone": "file-text",
+      "status": "em-breve",
+      "nota": "Em breve você acompanha aqui o histórico de acessos e ações."
+    },
+    {
+      "id": "ponto",
+      "titulo": "Batida de Ponto",
+      "descricao": "Jornada e registro de turno da equipe interna.",
+      "icone": "fingerprint-pattern",
+      "status": "em-breve",
+      "nota": "Estamos finalizando o controle de jornada da equipe."
+    },
+    {
+      "id": "admin",
+      "titulo": "Administração",
+      "descricao": "Configurações gerais, integrações e permissões.",
+      "icone": "settings",
+      "status": "em-breve",
+      "nota": "Estamos preparando as permissões por cargo e as configurações gerais."
+    }
+  ],
+  "recursos": {
+    "loginGoogle": true,
+    "modoEscuro": false,
+    "tokenSenhaMin": 15
+  }
+}

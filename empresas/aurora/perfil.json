@@ -1,0 +1,108 @@
+{
+  "slug": "aurora",
+  "nome": "Aurora Gestão",
+  "produto": "Portal Aurora",
+  "slogan": "Ideias em movimento",
+  "eyebrowLogin": "Gestão de Projetos",
+  "api": {
+    "dev": "",
+    "homologacao": "",
+    "producao": ""
+  },
+  "logos": {
+    "clara": "logo.svg",
+    "escura": "logo.svg",
+    "favicon": "favicon.svg"
+  },
+  "login": {
+    "selo": {
+      "texto": "Organização para seu dia",
+      "fonte": "fixo"
+    },
+    "titulo": "Projetos, pessoas e prazos na mesma direção.",
+    "subtitulo": "Organize o trabalho da equipe, acompanhe entregas e mantenha cada projeto em movimento.",
+    "formSubtitulo": "Entre com sua conta para acessar o Portal Aurora.",
+    "visual": "rede",
+    "chips": [
+      {
+        "titulo": "Projeto Horizonte",
+        "selo": "Em andamento",
+        "texto": "Próxima entrega em 5 dias",
+        "icone": "folder-kanban",
+        "fonte": "fixo"
+      },
+      {
+        "titulo": "Equipe conectada",
+        "selo": "Hoje",
+        "texto": "Planejamento em dia",
+        "icone": "users",
+        "fonte": "fixo"
+      }
+    ],
+    "indicadores": [
+      {
+        "rotulo": "Projetos ativos",
+        "valor": "12",
+        "icone": "folder-kanban",
+        "fonte": "fixo"
+      },
+      {
+        "rotulo": "Entregas no mês",
+        "valor": "28",
+        "icone": "calendar-check",
+        "fonte": "fixo"
+      },
+      {
+        "rotulo": "Pessoas na equipe",
+        "valor": "18",
+        "icone": "users",
+        "fonte": "fixo"
+      }
+    ]
+  },
+  "painel": {
+    "seloHero": "Portal Aurora",
+    "saudacao": "Olá, {nome}!",
+    "heroTexto": "Acompanhe seus projetos e encontre as ferramentas da sua equipe em um só lugar.",
+    "rotuloAtivo": "Disponível"
+  },
+  "modulos": [
+    {
+      "id": "projetos",
+      "titulo": "Projetos",
+      "descricao": "Organize iniciativas, acompanhe etapas e visualize as próximas entregas.",
+      "icone": "folder-kanban",
+      "status": "ativo",
+      "rota": "/modulo?id=projetos"
+    },
+    {
+      "id": "perfil",
+      "titulo": "Meu Perfil e Segurança",
+      "descricao": "Consulte seus dados e solicite a redefinição da sua senha.",
+      "icone": "user-round",
+      "status": "ativo",
+      "rota": "/perfil"
+    },
+    {
+      "id": "equipe",
+      "titulo": "Equipes",
+      "descricao": "Reúna informações e acompanhe as pessoas envolvidas em cada projeto.",
+      "icone": "users",
+      "status": "em-breve",
+      "nota": "A gestão de equipes está sendo preparada."
+    },
+    {
+      "id": "relatorios",
+      "titulo": "Relatórios",
+      "descricao": "Acompanhe indicadores e resultados dos projetos.",
+      "icone": "chart-column",
+      "status": "em-breve",
+      "nota": "Os relatórios estão sendo preparados."
+    }
+  ],
+  "recursos": {
+    "loginGoogle": true,
+    "modoEscuro": true,
+    "tokenSenhaMin": 15
+  }
+}

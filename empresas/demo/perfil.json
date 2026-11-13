@@ -1,0 +1,99 @@
+{
+  "slug": "demo",
+  "nome": "Vértice",
+  "produto": "Portal",
+  "slogan": "Central de Serviços",
+  "eyebrowLogin": "Gestão de Contratos",
+  "api": {
+    "dev": "",
+    "homologacao": "",
+    "producao": ""
+  },
+  "logos": {
+    "clara": "logo.svg",
+    "escura": "logo.svg",
+    "favicon": "favicon.svg"
+  },
+  "login": {
+    "selo": {
+      "texto": "Atendimento ativo",
+      "fonte": "fixo"
+    },
+    "titulo": "Acompanhe contratos, equipes e chamados em um só lugar.",
+    "subtitulo": "Empresa fictícia usada para testar o motor com outra paleta.",
+    "formSubtitulo": "Entre com sua conta para acessar o portal.",
+    "visual": "abstrato",
+    "chips": [
+      {
+        "titulo": "Contrato #128",
+        "selo": "Em dia",
+        "texto": "Renovação em 30 dias",
+        "icone": "file-check",
+        "fonte": "fixo"
+      }
+    ],
+    "indicadores": [
+      {
+        "rotulo": "Contratos ativos",
+        "valor": "128",
+        "icone": "file-text",
+        "fonte": "fixo"
+      },
+      {
+        "rotulo": "Chamados hoje",
+        "valor": "12",
+        "icone": "headset",
+        "fonte": "fixo"
+      },
+      {
+        "rotulo": "Satisfação",
+        "valor": "4,8 de 5",
+        "icone": "star",
+        "fonte": "fixo"
+      }
+    ]
+  },
+  "painel": {
+    "seloHero": "Portal ativo",
+    "heroTexto": "Escolha um módulo para continuar."
+  },
+  "modulos": [
+    {
+      "id": "frota",
+      "titulo": "Credenciamento e Frota",
+      "descricao": "Cadastro de motoboys, análise de documentos, aprovação e boas-vindas.",
+      "icone": "bike",
+      "status": "ativo",
+      "rota": "/modulo?id=frota"
+    },
+    {
+      "id": "parceiros",
+      "titulo": "Empresas Parceiras B2B",
+      "descricao": "Restaurantes, farmácias, contatos comerciais e demandas de entrega.",
+      "icone": "building",
+      "status": "em-breve",
+      "rota": "/modulo?id=parceiros"
+    },
+    {
+      "id": "escalas",
+      "titulo": "Gestão de Escalas",
+      "descricao": "Turnos por empresa parceira, check-in e presença em tempo real.",
+      "icone": "calendar-days",
+      "status": "em-breve",
+      "nota": "Estamos preparando a alocação automática de turnos e o check-in."
+    },
+    {
+      "id": "financeiro",
+      "titulo": "Financeiro e Repasses PIX",
+      "descricao": "Fechamento semanal da frota, chaves PIX e faturamento B2B.",
+      "icone": "badge-dollar-sign",
+      "status": "em-breve",
+      "nota": "Estamos finalizando a conciliação bancária e os repasses por PIX."
+    }
+  ],
+  "recursos": {
+    "loginGoogle": false,
+    "modoEscuro": true,
+    "tokenSenhaMin": 30
+  }
+}

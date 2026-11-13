@@ -1,0 +1,122 @@
+{
+  "slug": "shalom",
+  "nome": "Shalom",
+  "produto": "Hub SSO",
+  "slogan": "Centro de Comando e Operações",
+  "eyebrowLogin": "Gestão Imobiliária",
+  "api": {
+    "dev": "",
+    "homologacao": "",
+    "producao": ""
+  },
+  "logos": {
+    "clara": "logo.svg",
+    "escura": "logo.svg",
+    "favicon": "favicon.svg"
+  },
+  "login": {
+    "selo": {
+      "texto": "Portfólio atualizado",
+      "fonte": "fixo"
+    },
+    "titulo": "Gerencie imóveis, negociações e equipe em um só lugar.",
+    "subtitulo": "Acompanhe o portfólio da Shalom Imóveis e mantenha os dados sempre atualizados.",
+    "formSubtitulo": "Entre com sua conta corporativa para acessar o painel da Shalom Imóveis.",
+    "visual": "abstrato",
+    "chips": [
+      {
+        "titulo": "Imóvel #212",
+        "selo": "Disponível",
+        "texto": "Apartamento • 3 quartos",
+        "icone": "house",
+        "fonte": "fixo"
+      }
+    ],
+    "indicadores": [
+      {
+        "rotulo": "Imóveis cadastrados",
+        "valor": "Sem dados",
+        "icone": "house",
+        "fonte": "fixo"
+      },
+      {
+        "rotulo": "Disponíveis",
+        "valor": "Sem dados",
+        "icone": "circle-check",
+        "fonte": "fixo"
+      },
+      {
+        "rotulo": "Negociações ativas",
+        "valor": "Sem dados",
+        "icone": "clock",
+        "fonte": "fixo"
+      }
+    ]
+  },
+  "painel": {
+    "seloHero": "Painel de Gestão Imobiliária",
+    "saudacao": "Bem-vindo, {nome}!",
+    "heroTexto": "Gerencie o portfólio da Shalom Imóveis, acompanhe negociações e mantenha os dados sempre atualizados.",
+    "cta": {
+      "texto": "Ver imóveis",
+      "rota": "/modulo?id=imoveis",
+      "icone": "building"
+    },
+    "indicadores": [
+      {
+        "rotulo": "Imóveis cadastrados",
+        "valor": "Sem dados",
+        "icone": "house",
+        "fonte": "api",
+        "endpoint": "/imoveis/total"
+      },
+      {
+        "rotulo": "Disponíveis",
+        "valor": "Sem dados",
+        "icone": "circle-check",
+        "fonte": "api",
+        "endpoint": "/imoveis/disponiveis"
+      },
+      {
+        "rotulo": "Negociações ativas",
+        "valor": "Sem dados",
+        "icone": "clock",
+        "fonte": "api",
+        "endpoint": "/negociacoes/ativas"
+      }
+    ],
+    "rotuloAtivo": "Ativo"
+  },
+  "modulos": [
+    {
+      "id": "imoveis",
+      "titulo": "Gestão de Imóveis",
+      "descricao": "Cadastre, edite e acompanhe todo o portfólio de imóveis da Shalom: residenciais, comerciais e terrenos.",
+      "icone": "building",
+      "status": "ativo",
+      "rota": "/modulo?id=imoveis"
+    },
+    {
+      "id": "perfil",
+      "titulo": "Meu Perfil e Senha",
+      "descricao": "Gerencie seus dados pessoais, e-mail de acesso e altere sua senha com segurança.",
+      "icone": "user-round",
+      "status": "ativo",
+      "rota": "/perfil"
+    },
+    {
+      "id": "relatorios",
+      "titulo": "Relatórios e Métricas",
+      "descricao": "Acompanhe o desempenho do portfólio com gráficos de vendas, locações e tempo médio de fechamento.",
+      "icone": "chart-line",
+      "status": "em-breve",
+      "nota": "Os relatórios do portfólio estão a caminho."
+    }
+  ],
+  "recursos": {
+    "loginGoogle": false,
+    "modoEscuro": false,
+    "tokenSenhaMin": 15,
+    "sso": true
+  }
+}
